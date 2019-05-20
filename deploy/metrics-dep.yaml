@@ -6,11 +6,11 @@ metadata:
   namespace: dev
   annotations:
     flux.weave.works/tag.metrics: glob:*
+spec:
+  replicas: 1
   selector:
     matchLabels:
       app: mighty-fine
-spec:
-  replicas: 1
   template:
     metadata:
       labels:
