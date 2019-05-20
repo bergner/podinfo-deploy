@@ -15,9 +15,5 @@ spec:
           serviceName: mighty-fine
           servicePort: 3000
         path: /mighty-fine
-  tls:
-  - hosts:
-    - training-6.training.weave.works
-    secretName: ingress-certificate
 status:
   loadBalancer: {}
