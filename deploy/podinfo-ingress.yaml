@@ -19,6 +19,6 @@ spec:
   tls:
     - hosts:
       - training-6.training.weave.works
-    secretName: ingress-certificate
+      secretName: ingress-certificate
 status:
   loadBalancer: {}
