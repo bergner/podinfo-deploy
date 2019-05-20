@@ -6,9 +6,17 @@ metadata:
   namespace: dev
   annotations:
     flux.weave.works/tag.metrics: glob:*
+  selector:
+    matchLabels:
+      app: metrics
 spec:
   replicas: 1
   template:
+    metadata:
+      labels:
+        app: metrics
+      annotations:
+        prometheus.io/scrape: 'true'
     spec:
       containers:
       - name: metrics-demo
