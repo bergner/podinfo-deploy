@@ -8,18 +8,18 @@ metadata:
     flux.weave.works/tag.metrics: glob:*
   selector:
     matchLabels:
-      app: metrics
+      app: mighty-fine
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: metrics
+        app: mighty-fine
       annotations:
         prometheus.io/scrape: 'true'
     spec:
       containers:
-      - name: metrics-demo
+      - name: mighty-fine
         image: quay.io/brice/metrics-demo:v4-subscription-service
         ports:
         - containerPort: 3000
